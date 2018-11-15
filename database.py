@@ -18,6 +18,7 @@ def get_all_cats():
     return cats
 
 
-def get_cay_by_id(id):
-	cat= 
+def get_cat_by_id(id):
+	catname = session.query(Cat).filter_by(id=id).first()
+	return catname 
 
